@@ -1,1 +1,23 @@
+/* style.css */
 
+:root {
+  --background-color: white;
+  --foreground-color: black;
+  
+  @media (prefers-color-scheme: dark) {
+    --background-color: black;
+    --foreground-color: white;
+  }
+}
+
+html {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+#page-title {
+  h1 {
+    text-align: center;
+    font-size: 100px;
+  }
+}
