@@ -1,6 +1,6 @@
 // script.js
 
-const titlePlate = () => {
+const pageTitle = () => {
   const title = document.title;
   return `<h1>${title}</h1>`;
 };
@@ -15,5 +15,5 @@ const navBar = () => {
   return content;
 };
 
-document.getElementById('page-title').innerHTML = titlePlate();
+document.getElementById('page-title').innerHTML = pageTitle();
 document.getElementById('navigation-bar').innerHTML = navBar();
