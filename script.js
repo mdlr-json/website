@@ -9,7 +9,7 @@ const navBar = () => {
   let content = '<ul>';
   const pages = ['index'];
   for (i = 0; i < pages.length; i++) {
-    content += (`<li><a href="/${pages[i]}.html">${pages[i]}</a></li>`);
+    content += (`<li><a href="${pages[i]}.html">${pages[i]}</a></li>`);
   }
   content += '</ul>';
   return content;
