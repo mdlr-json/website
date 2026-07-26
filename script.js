@@ -1,6 +1,18 @@
 // script.js
 
-const navBar = '';
+const titlePlate = () => {
+  const title = document.title;
+  return `<h1>${title}</h1>`;
+};
 
-document.getElementById('page-title').textContent = document.title;
-document.getElementById('navigation-bar').innerHTML = navBar;
+const navBar = () => {
+  let content = '<ul>';
+  const pages = ['index'];
+  for (i = 0; i < n; i++) {
+    content += (`<li><a src="/${pages[i]}.html">${pages[i]}</a></li>`);
+  }
+  return content += '</ul>';
+};
+
+document.getElementById('page-title').innerHTML = titlePlate();
+document.getElementById('navigation-bar').innerHTML = navBar();
